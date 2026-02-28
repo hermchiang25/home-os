@@ -1,21 +1,21 @@
-# Task Management System Configuration
+# Task Management System Configuration - Home
 # Copy to config.yaml and customize for your workflow
 
-# Task categories - modify based on your needs
+# Task categories - home life focused
 categories:
-  - technical      # Development, coding, debugging
-  - outreach       # Emails, meetings, networking
-  - research       # Learning, analysis, investigation
-  - writing        # Documentation, blogs, reports
-  - admin          # Administrative, organizational
-  - other          # Miscellaneous
+  - health      # Fitness, nutrition, sleep, mental health, medical
+  - home        # Household tasks, repairs, errands, purchases
+  - family      # Partner, kids, extended family coordination
+  - learning    # Reading, courses, skills, hobbies
+  - habits      # Routines, rituals, recurring behaviors
+  - personal    # Finance, admin, self-care, goals
 
 # Priority levels
 priorities:
-  - P0  # Critical/Urgent - do immediately
-  - P1  # Important - has deadlines
-  - P2  # Normal - regular work
-  - P3  # Low - nice to have
+  - P0  # Do today - urgent or blocked if not done
+  - P1  # This week - important, needs attention soon
+  - P2  # This month - scheduled, no immediate urgency
+  - P3  # Someday - nice to have, no deadline
 
 # Status codes
 statuses:
@@ -23,6 +23,7 @@ statuses:
   s: started
   b: blocked
   d: done
+  r: recurring
 
 # Deduplication settings
 deduplication:
@@ -33,7 +34,7 @@ deduplication:
 # Priority limits (warning thresholds)
 priority_limits:
   P0: 3  # Warn if more than 3 P0 tasks
-  P1: 5  # Warn if more than 5 P1 tasks
+  P1: 7  # Warn if more than 7 P1 tasks
 
 # Task aging (in days)
 task_aging:
@@ -42,49 +43,102 @@ task_aging:
 
 # Category keywords for auto-categorization
 category_keywords:
-  technical:
-    - code
-    - api
-    - database
-    - deploy
+  health:
+    - workout
+    - exercise
+    - gym
+    - run
+    - walk
+    - sleep
+    - diet
+    - meal
+    - nutrition
+    - doctor
+    - appointment
+    - meditate
+    - therapy
+    - weight
+    - steps
+    - water
+    - health
+    - fitness
+    - recovery
+  home:
+    - clean
     - fix
-    - bug
-    - implement
-    - develop
-    - debug
-    - server
-  outreach:
-    - email
-    - contact
-    - reach
-    - meeting
-    - call
-    - follow
-    - introduce
-    - connect
-  research:
-    - research
-    - study
-    - learn
-    - investigate
-    - analyze
-    - explore
-    - understand
-    - evaluate
-  writing:
-    - write
-    - draft
-    - document
-    - blog
-    - article
-    - report
-    - proposal
-    - outline
-  admin:
-    - schedule
+    - repair
+    - buy
+    - order
+    - grocery
+    - chore
     - organize
-    - expense
-    - invoice
-    - calendar
-    - filing
+    - declutter
+    - maintenance
+    - install
+    - paint
+    - garden
+    - laundry
+    - dishes
+    - vacuum
+    - trash
+    - bills
+  family:
+    - family
+    - partner
+    - spouse
+    - kids
+    - children
+    - school
+    - birthday
+    - anniversary
+    - event
+    - coordinate
+    - visit
+    - call
+    - gift
+    - dinner
+    - holiday
+  learning:
+    - read
+    - book
+    - course
+    - learn
+    - study
+    - practice
+    - skill
+    - watch
+    - tutorial
+    - research
+    - explore
+    - hobby
+    - podcast
+    - article
+    - class
+  habits:
+    - daily
+    - routine
+    - habit
+    - track
+    - journal
+    - morning
+    - evening
+    - ritual
+    - streak
     - review
+    - recurring
+    - weekly
+    - check-in
+  personal:
+    - finance
+    - budget
+    - tax
+    - insurance
+    - admin
+    - paperwork
+    - goal
+    - reflect
+    - plan
+    - savings
+    - invest
+    - passport
+    - document
